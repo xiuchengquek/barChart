@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script type='text/javascript' src="js/jquery-1.11.1.min.js"></script>
+
+    <script type='text/javascript' src="js/d3.v3.min.js"></script>
+    <link rel="stylesheet" href="css/barChart.css">
+    <link rel="stylesheet" href="css/jquery-ui.css" />
+
+
+
+</head>
+<body>
+<div id="dashboard">
+    <form>
+        <label>Gene Name : <input id='tags' type="text"/></label><br/>
+        <p></p>
+
+        <label> Value Type :
+            <select id='plotType'>
+                <option>Counts</option>
+                <option>RPKM</option>
+                <option>Log RPKM</option>
+            </select>
+        </label>
+        <label>Sort Values : <input id='sortValue' type="checkbox" value="Sort Value" /></label>
+        <br>
+
+
+    </form>
+</div>
+<div id="plot"></div>
+
+
+
+
+<script src="js/d3.tip.v0.6.3.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script type='text/javascript' src="js/barchart.js"></script>
+<script type='text/javascript' src="data/BigJson.js"></script>
+<script type='text/javascript'>
+
+
+    barplot('Counts', 'TP53')
+
+
+
+
+</script>
+
+</body>
+
+
+
+</html>
