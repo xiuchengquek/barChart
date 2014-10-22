@@ -64,7 +64,7 @@ var barplot = function(plot_type, gene_name) {
     subData = constructLocal(subData, defaultOrder)
     var classification  = data['Classification']
 
-    var margin = {top: 20, right: 50, bottom: 100, left: 40, legend : 200},
+    var margin = {top: 50, right: 50, bottom: 100, left: 40, legend : 200},
         width = 960 - margin.left - margin.right,
         height = 700 - margin.top - margin.bottom -  margin.legend ;
 
@@ -141,6 +141,12 @@ var barplot = function(plot_type, gene_name) {
         .attr("fill", function(d) { return colourScale(classification[d.Patient])})
         .on('mouseover', tip.show)
         .on('mouseout', tip.hide)
+
+
+    svg.append('text')
+       .attr('x', 0 )
+       .attr('y', -10)
+       .text('Gene : ' +gene_name)
 
 
 

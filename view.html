@@ -15,17 +15,18 @@
 <body>
 <div id="dashboard">
     <form>
-        <label>Gene Name : <input id='tags' type="text"/></label><br/>
+        <label>Gene Name : <input id='tags' type="text" value='TP53'  autocomplete="off"/></label><br/>
         <p></p>
 
         <label> Value Type :
-            <select id='plotType'>
-                <option>Counts</option>
+            <select id='plotType' autocomplete="off">
+
+                <option selected="selected">Counts</option>
                 <option>RPKM</option>
                 <option>Log RPKM</option>
             </select>
         </label>
-        <label>Sort Values : <input id='sortValue' type="checkbox" value="Sort Value" /></label>
+        <label>Sort Values : <input id='sortValue' type="checkbox" value="Sort Value" autocomplete="off"/></label>
         <br>
 
 
