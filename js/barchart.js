@@ -25,6 +25,9 @@ $(function(){
     })
 
 
+    $('.Loading').remove();
+
+
 
 })
 
@@ -59,7 +62,6 @@ var barplot = function(plot_type, gene_name) {
     d3.select("svg")
         .remove();
     var defaultOrder = data['Order']
-    console.log('defuulat',defaultOrder)
     var subData = data[plot_type][gene_name]
     subData = constructLocal(subData, defaultOrder)
     var classification  = data['Classification']

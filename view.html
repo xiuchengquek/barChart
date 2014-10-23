@@ -22,8 +22,11 @@
             <select id='plotType' autocomplete="off">
 
                 <option selected="selected">Counts</option>
-                <option>RPKM</option>
-                <option>Log RPKM</option>
+                <option>Log2 RPKM</option>
+                <option>Fitted Values - Counts</option>
+                <option>Fitted Values - Log2 RPKM</option>
+
+
             </select>
         </label>
         <label>Sort Values : <input id='sortValue' type="checkbox" value="Sort Value" autocomplete="off"/></label>
@@ -32,7 +35,12 @@
 
     </form>
 </div>
-<div id="plot"></div>
+<div id="plot">
+
+    <br/>
+    <p class="Loading">Loading</p>
+    <img class="Loading" src="css/loader.gif"/>
+</div>
 
 
 
